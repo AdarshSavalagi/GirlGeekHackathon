@@ -1,0 +1,58 @@
+{
+    "7": [
+        "Research and Analysis",
+        "Wireframing",
+        "Prototyping",
+        "Visual Design",
+        "Usability Testing",
+        "Deployment Support",
+        "Maintenance Collaboration",
+        "Documentation and Guidelines"
+    ],
+    "1": [
+        "Requirement Understanding",
+        "Setup and Configuration",
+        "Markup and Structure",
+        "Styling and UI Implementation",
+        "Behavior and Interactivity",
+        "Documentation and Guidelines"
+    ],
+    "2": [
+        "Content Strategy",
+        "Content Creation and Curation",
+        "Information Architecture",
+        "User-Centric Approach",
+        "Accessibility and SEO",
+        "Documentation and Guidelines"
+    ],
+    "3": [
+        "Requirement Analysis",
+        "Database Design",
+        "Selecting the DBMS",
+        "Implementation",
+        "Optimization and Tuning",
+        "Security Implementation",
+        "Documentation and Guidelines"
+    ],
+    "4": [
+        "Requirement Analysis",
+        "Server-Side Logic Development",
+        "API Development",
+        "Testing and Debugging",
+        "Integration with Frontend",
+        "Security Implementation",
+        "Scalability Planning",
+        "Documentation"
+    ],
+    "5":[
+        "Threat Assessment and Analysis",
+        "Security Architecture Design","Implementation of Security Measures",
+        "Vulnerability Testing and Penetration Testing",
+        "Security Monitoring and Incident Response",
+        "Code and Application Security Audits",
+        "Collaboration with Development Teams",
+        "Security Documentation and Guidelines",
+        "Security Updates and Patch Management",
+        "Security Awareness Training"
+    ]
+}
