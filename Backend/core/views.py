@@ -9,37 +9,6 @@ import os
 import json
 
 
-# class DeveloperView(APIView):
-#     authentication_classes = [JWTAuthentication]
-#     permission_classes = [IsAuthenticated]
-#     def get_workflow(num):
-#         with open(os.path.join('static', 'workflow.json')) as file:
-#             data = json.loads(file)
-#         return data[num]
-
-#     def get(self, request):
-#         projects = ProjectSerializer(Project.objects.all(), many=True)
-#         data = {'projects': projects}
-#         return Response(data)
-
-#     def post(self, request):
-#         try:
-#             if request.data['type']=='1': #send project data 
-#                 data = {}
-#                 project = Project.objects.filter(id=request.data['pid'])
-#                 dev = request.user
-#                 data['progress']=ProjectSerializer(project,many=True)
-#                 data['workflow'] = self.get_workflow(dev.Category)
-#                 return Response(data)
-#             elif request.data['type']=='2': # edit progress 
-#                 project = Project.objects.filter(id=request.data['pid'])
-#                 task = Task.objects.filter(dev=request.user).filter(project=project).first()
-#                 task.progress = request.data.get('progress',1)
-#                 task.save()
-#                 return Response({'message':"200"},status=200)
-#         except Exception as e:
-#             return Response(e)
-
 
 class DeveloperView(APIView):
     authentication_classes = [JWTAuthentication]
@@ -116,41 +85,6 @@ class DeveloperView(APIView):
 
     def post(self, request):
         return self.handle_post_request(request)
-
-# class AdminView(APIView):
-#     authentication_classes = [JWTAuthentication]
-#     permission_classes = [IsAuthenticated]
-
-
-#     def get_project_data(self):
-#         projects = Project.objects.all()
-#         serialized_projects = ProjectSerializer(projects, many=True)
-#         return serialized_projects.data
-    
-#     def get_project_by_id(self, project_id):
-#         try:
-#             return Project.objects.get(id=project_id)
-#         except ObjectDoesNotExist:
-#             return None
-
-#     def get(self, request):
-#         projects_data = self.get_project_data()
-#         return Response({'projects': projects_data})
-    
-#     def post(self,request):
-#         if request.data.get('type') == '1': #get project details
-#             data = ProjectSerializer(self.get_project_by_id(request.data.get('pid','')), many=True) 
-#             return Response(data)
-#         elif request.data.get('type')=='2': # add project
-#             title = request.data.get('title','Nothing')
-#             supporting_url = request.data.get('surl','')
-#             description = request.data.get('desc','')
-#             purpose = request.data.get('purpose','')
-#             deadline = request.data.get('deadline','')
-#             obj = Project(title=title,supporting_urls=supporting_url,description=description,purpose=purpose,deadline=deadline)
-#             obj.save()
-#             return Response({'message':'Created projected successfully'},status=200)
-
 
 
 class AdminView(APIView):
