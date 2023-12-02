@@ -41,7 +41,7 @@ The repository consists of two main folders:
    - Update task status or completion.
 
 ## Contributors
-- [Swathi](link-to-your-profile)
+- [Swathi](https://github.com/SwathiSherigar)
 - [Adarsh S M](https://github.com/AdarshSavalagi)
 - [Sinchana](link-to-profile)
 - [Soumya M N](link-to-profile)
