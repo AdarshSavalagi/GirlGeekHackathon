@@ -49,5 +49,3 @@ The repository consists of two main folders:
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
-- Mention any acknowledgments or references here.
