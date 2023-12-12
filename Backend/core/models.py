@@ -7,7 +7,7 @@ from django.contrib.auth.hashers import make_password
 
 
 username = 'NITKHackathon'
-access_token = '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'
+access_token = '<GITHUB TOKEN>'
 
 
 Categories = [
